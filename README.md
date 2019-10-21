@@ -1,2 +1,4 @@
 # karsix.io
-Using Github pages to create a portfollio. Backup website, when server is down, under maintainence, or if I am too lazy to work on my server.
+Using Github pages to create a portfollio. This is my main website, not using personal server (it is currently down and I cannot maintain it since I am at school).
+
+Address: https://karsix.io
