@@ -6,20 +6,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/stylesheet.css" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <div class="navbar">
-        <ul>
-            <li style="float: left"><a class="brand" href="index.html">Karsix</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="experience.html">Experiences</a></li>
-        </ul>
+    <div class="navbar" id="topNavbar">
+        <a class="active" href="index.html">Karsix</a>
+        <a href="contactme.html">Contact Me</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experiences</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 
     <!-- Big Picture Page -->
     <div id="homepage">
