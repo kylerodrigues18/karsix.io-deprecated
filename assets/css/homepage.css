@@ -81,11 +81,12 @@ html, body {
 
 /* Big Picture Home Page */
 #homepage {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../images/index2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../images/me.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 
     #homepage div h2 {
@@ -93,7 +94,6 @@ html, body {
         color: white;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         font-size: 100px;
-        text-align: center;
         padding-top: 35vh;
     }
 
@@ -102,5 +102,35 @@ html, body {
         color: white;
         text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
         font-size: 40px;
-        text-align: center;
+    }
+
+    #homepage button {
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+        #homepage div h2 {
+            font-family: 'Karla', sans-serif;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 35vh;
+        }
+
+        #homepage div h3 {
+            font-family: 'Karla', sans-serif;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 5vh;
+        }
     }

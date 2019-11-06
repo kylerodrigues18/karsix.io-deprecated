@@ -1,29 +1,79 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 
 <head>
-    <title>karsix</title>
+    <title>Experience</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/experience.css" />
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <div class="navbar" id="topNavbar">
+        <a class="active" href="index.html"> Karsix</a>
+        <a href="contactme.html"> Contact Me</a>
+        <a href="aboutme.html"> About Me</a>
+        <a href="projects.html"> Projects</a>
+        <a href="experience.html"> Experiences</a>
 
-    <!-- Header -->
-    <header id="header">
-        <h1>
-            <a href="index.html">Karsix</a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="experience.html">Experiences</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="contactme.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"> </i>
+        </a>
+    </div>
 
+    <script>
+        function myFunction() {
+            var x = document.getElementById("topNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            }
+
+            else {
+                x.className = "navbar";
+            }
+
+        }
+    </script>
+    <!-- Big Picture Page -->
+    <h1>Experience</h1>
+    <div class="flexbox">
+        <div class="text">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fleximage" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fleximage" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>
+                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+            </p>
+        </div>
+        <div class="pictures">
+            <h2>About Me</h2>
+            <h5>Photo of me:</h5>
+            <div class="fleximage" style="height:200px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="fleximage" style="height:60px;">Image</div><br>
+            <div class="fleximage" style="height:60px;">Image</div><br>
+            <div class="fleximage" style="height:60px;">Image</div>
+        </div>
+    </div>
 </body>
 
 </html>
