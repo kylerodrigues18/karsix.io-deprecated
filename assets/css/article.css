@@ -1,4 +1,5 @@
 ﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 
 * {
     box-sizing: border-box;
@@ -85,7 +86,7 @@ html, body {
 
 /* Big Picture Home Page */
 body {
-    /* Photo by Paweł Czerwiński */
+    /* Default Photo Provided by Paweł Czerwiński */
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../images/background.jpg');
     height: 100%;
     background-position: center;
@@ -95,7 +96,7 @@ body {
 }
 
 h1 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     font-size: 80px;
@@ -112,19 +113,85 @@ h1 {
 
 .text {
     flex: 0%;
-    color: black;
-    background-color: transparent;
-    padding: 20px;
+    color: white;
+    background-color: #1f1d1d;
+    padding: 4% 10%;
 }
 
+    .text h2 {
+        font-family: 'Lora', serif;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size: 40px;
+    }
+
+    .text p {
+        text-align: left;
+        font-family: 'Karla', sans-serif;
+        color: white;
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+
+    .text h5 {
+        text-align: center;
+        font-family: 'Karla', sans-serif;
+        color: white;
+        font-size: 14px;
+        padding-bottom: 2%;
+    }
+
 .fleximage {
-    background-color: #aaa;
-    width: 100%;
+    background-color: transparent;
+    min-width: 50%;
+    max-width: 50%;
+    height: auto;
     padding: 20px;
+    padding-bottom: 2px;
 }
 
 @media screen and (max-width: 700px) {
+    h1 {
+        font-family: 'Lora', serif;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size: 50px;
+        padding-top: 30vh;
+        padding-bottom: 20vh;
+    }
+
     .flexbox {
         flex-direction: column;
+    }
+
+    .text h2 {
+        font-family: 'Lora', serif;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size: 30px;
+    }
+
+    .text p {
+        text-align: left;
+        font-family: 'Karla', sans-serif;
+        color: white;
+        font-size: 18px;
+        padding-bottom: 2%;
+    }
+
+    .fleximage {
+        background-color: transparent;
+        min-width: 100%;
+        height: auto;
+        padding: 20px;
+        padding-bottom: 2px;
+    }
+
+    .text h5 {
+        text-align: center;
+        font-family: 'Karla', sans-serif;
+        color: white;
+        font-size: 12px;
+        padding-bottom: 2%;
     }
 }
