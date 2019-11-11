@@ -149,6 +149,12 @@ h1 {
         padding-bottom: 2%;
     }
 
+    .text a {
+        font-family: 'Karla', sans-serif;
+        color: white;
+        font-size: 14px;
+    }
+
 .fleximage {
     background-color: transparent;
     min-width: 50%;
