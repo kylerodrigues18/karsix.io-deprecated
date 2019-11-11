@@ -6,10 +6,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="google-site-verification" content="4FC-RZJomSlQN31AGe3yP0CcAi7Kn7MzuJlV2hrP_co" />
-    <link rel="stylesheet" href="../assets/css/experience.css" />
+    <link rel="stylesheet" href="../assets/css/homepage.css" />
+
+    <style>
+        #homepage {
+            background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../images/two.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
 
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Load a css item to add a Netflix style carousal -->
+    <link href="https://cdn.rawgit.com/anthonykrivonos/flix-carousel/65556d56/src/carousel.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,58 +45,28 @@
             var x = document.getElementById("topNavbar");
             if (x.className === "navbar") {
                 x.className += " responsive";
-            }
-
-            else {
+            } else {
                 x.className = "navbar";
             }
-
         }
     </script>
+
     <!-- Big Picture Page -->
-    <h1>Projects</h1>
-    <div class="flexbox">
-        <div class="text">
-            <h2>Work Experience</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fleximage" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>
-                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-            <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fleximage" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>
-                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-        </div>
-        <div class="text">
-            <h2>Academic Experience</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fleximage" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>
-                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
-            <br>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fleximage" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>
-                Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-            </p>
+    <div id="homepage">
+        <div>
+            <h2>Projects</h2>
+
+            <div class="container">
+                <div class="item">
+                    <a href="../html/projects/discoveryWorld.html" class="button">Discovery World Analysis</a>
+                </div>
+                <div class="item">
+                    <a href="../html/projects/gtfsProject.html" class="button">GTFS Mapping App</a>
+                </div>
+                <div class="item">
+                    <a href="../html/projects/website.html" class="button">Website | Project Karsix</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
